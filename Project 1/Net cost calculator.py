@@ -115,14 +115,15 @@ def net_cost(listprice):
     netCost = paid_seller + exp_sum
 
     # Output
+    print("  Net cost of fixed assets :  ")
     print()
-    print(f"List price ({date})                    = {listprice}")
-    print(f"Less Trade discount ({trade_per}%)      = ({tradeVal})")
+    print(f"List price ({date})                   = {listprice}")
+    print(f"Less Trade discount ({trade_per}%)    = ({tradeVal})")
     print(f"                                      = {after_price}")
-    print(f"Less Cash discount ({cash_per}%)       = ({cashVal})")
-    print(f"Invoice price                          = {inv_price}")
-    print(f"Add Sale tax ({tax}%)                  = {taxVal}")
-    print(f"Cash paid to seller                    = {paid_seller}")
+    print(f"Less Cash discount ({cash_per}%)      = ({cashVal})")
+    print(f"Invoice price                         = {inv_price}")
+    print(f"Add Sale tax ({tax}%)                 = {taxVal}")
+    print(f"Cash paid to seller                   = {paid_seller}")
     print()
     print(f"Installation charges                  = {install_charges}")
     print(f"Test run charges                      = {test_run_charges}")
