@@ -1,0 +1,8 @@
+w = write 
+a = append 
+r = read 
+x = create new file 
++ = Dual purpose modifier 
+r+ = read and write 
+w+ = write and read 
+a+ = append and read
