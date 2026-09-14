@@ -2,13 +2,8 @@
 # ============================================================
 # TAKE LIST PRICE FROM USER
 # ============================================================
-
 # input() always gives us a string.
 # int() converts that string into an integer.
-#
-# Example:
-# User enters: 100000
-# list_price becomes: 100000
 list_price = int(input("Enter list price: "))
 
 
@@ -17,14 +12,8 @@ list_price = int(input("Enter list price: "))
 # ============================================================
 
 # This function calculates a percentage value.
-#
 # Formula:
 # Percentage Value = (value × percentage) / 100
-#
-# Example:
-# per_val(1000, 10)
-# = 1000 × 10 / 100
-# = 100
 def per_val(val1, val2):
     return val1 * val2 / 100
 
@@ -57,14 +46,6 @@ def purchase_date():
     year = int(input("Enter Year: "))
 
     # f-string combines different values into one string.
-    #
-    # Example:
-    # date = 14
-    # month = "September"
-    # year = 2026
-    #
-    # Result:
-    # "14/September/2026"
     return f"{date}/{month}/{year}"
 
 
@@ -141,7 +122,7 @@ def net_cost(listprice):
     # "Yes" → "yes"
     #
     # This makes our comparison easier.
-    check_dis = input("Any Discount is available: ").lower()
+    check_dis = input("Any Discount is available(Yes/No): ").lower()
 
 
     # Check whether discount is available.
@@ -152,7 +133,7 @@ def net_cost(listprice):
         # ----------------------------------------------------
 
         trade_dis = input(
-            "Trade discount is available: "
+            "Trade discount is available(Yes/No): "
         ).lower()
 
         if trade_dis == "yes":
@@ -183,7 +164,7 @@ def net_cost(listprice):
         # ----------------------------------------------------
 
         cash_dis = input(
-            "Cash discount is available: "
+            "Cash discount is available(Yes/No): "
         ).lower()
 
         if cash_dis == "yes":
@@ -221,7 +202,7 @@ def net_cost(listprice):
     # ========================================================
 
     # Ask whether tax is applicable.
-    ask_tax = input("Any tax is given: ").lower()
+    ask_tax = input("Any tax is given(Yes/No): ").lower()
 
     if ask_tax == "yes":
 
@@ -248,7 +229,7 @@ def net_cost(listprice):
     # ========================================================
 
     # Ask whether any additional expenses exist.
-    exp = input("Any expense is given: ").lower()
+    exp = input("Any expense is given(Yes/No): ").lower()
 
     if exp == "yes":
 
